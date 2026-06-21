@@ -8,7 +8,7 @@
 
 <!-- Замените URL ниже после публикации проекта -->
 
-**Live Demo:** [Открыть сайт](https://su0ppanda.github.io/dentist-lending-site.github.io/)
+**Live Demo:** [Открыть сайт](https://su0ppanda.github.io/dentist-lending-site/)
 
 > Ссылка будет обновлена после публикации проекта.
 
