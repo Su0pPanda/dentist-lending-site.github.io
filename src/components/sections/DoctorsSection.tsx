@@ -1,0 +1,5 @@
+import type { ClinicContent } from '../../domain/clinic'
+import { Section } from '../layout/Section'
+import { Card } from '../ui/Card'
+import { PlaceholderBadge } from '../ui/PlaceholderBadge'
+export function DoctorsSection({ content }: { content: ClinicContent }) { return <Section id="doctors" eyebrow="Наша команда" title="Врачи, которым важно ваше спокойствие" intro="Объясняем каждый шаг и составляем индивидуальный план — без давления и лишних процедур."><div className="doctors-grid" tabIndex={0} aria-label="Карточки врачей, прокручиваемая область">{content.doctors.map((doctor) => <Card key={doctor.id} className="doctor-card"><div className="doctor-photo"><img src={doctor.photo.src} alt={doctor.photo.alt} width={doctor.photo.width} height={doctor.photo.height} loading="lazy"/><PlaceholderBadge visible={doctor.placeholder}/></div><div className="doctor-copy"><p>{doctor.specialization.value}</p><h3>{doctor.name.value}</h3><span>Стаж {doctor.experienceYears} лет</span><p>{doctor.summary.value}</p></div></Card>)}</div></Section> }

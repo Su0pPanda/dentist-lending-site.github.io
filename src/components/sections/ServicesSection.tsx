@@ -1,0 +1,7 @@
+import type { ClinicContent } from '../../domain/clinic'
+import { buildWhatsAppUrl } from '../../lib/whatsapp'
+import { Section } from '../layout/Section'
+import { ButtonLink } from '../ui/ButtonLink'
+import { Card } from '../ui/Card'
+import { PlaceholderBadge } from '../ui/PlaceholderBadge'
+export function ServicesSection({ content }: { content: ClinicContent }) { return <Section id="services" eyebrow="Популярные услуги" title="Лечение, которое подходит именно вам" intro="Стоимость указана ориентировочно. Точный план и цена — после осмотра врача."><div className="services-grid">{content.services.map((service) => { const href = buildWhatsAppUrl(content.clinic.whatsappNumber.value, { type: 'service', source: 'Карточка услуги', service: service.whatsappContext }); return <Card key={service.id} className={`service-card ${service.featured ? 'service-card--featured' : ''}`}><div className="service-top"><span className="service-number">{service.icon}</span>{service.featured && <span className="service-label">Популярно</span>}</div><h3>{service.name.value}</h3><p>{service.description.value}</p><div className="service-bottom"><strong>{service.priceFrom.value}</strong><ButtonLink href={href} variant={service.featured ? 'primary' : 'ghost'} aria-label={`Записаться: ${service.name.value}`}>Записаться</ButtonLink></div><PlaceholderBadge visible={service.name.placeholder}/></Card>})}</div></Section> }

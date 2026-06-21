@@ -1,0 +1,16 @@
+import { clinicContent } from '../content/clinic'
+import { Header } from '../components/layout/Header'
+import { Footer } from '../components/layout/Footer'
+import { HeroSection } from '../components/sections/HeroSection'
+import { BenefitsSection } from '../components/sections/BenefitsSection'
+import { ServicesSection } from '../components/sections/ServicesSection'
+import { QuizSection } from '../components/sections/QuizSection'
+import { DoctorsSection } from '../components/sections/DoctorsSection'
+import { CasesReviewsSection } from '../components/sections/CasesReviewsSection'
+import { AppointmentSection } from '../components/sections/AppointmentSection'
+import { ContactsSection } from '../components/sections/ContactsSection'
+import '../styles/tokens.css'
+import '../styles/global.css'
+import '../styles/sections.css'
+
+export function App() { return <><Header clinic={clinicContent.clinic}/><main><HeroSection content={clinicContent}/><BenefitsSection content={clinicContent}/><ServicesSection content={clinicContent}/><QuizSection content={clinicContent}/><DoctorsSection content={clinicContent}/><CasesReviewsSection content={clinicContent}/><AppointmentSection content={clinicContent}/><ContactsSection content={clinicContent}/></main><Footer content={clinicContent}/></> }

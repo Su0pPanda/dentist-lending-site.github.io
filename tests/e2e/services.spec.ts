@@ -1,0 +1,2 @@
+import { expect, test } from '@playwright/test'
+test('six services include three featured contextual links', async ({ page }) => { await page.goto('/#services'); await expect(page.locator('.service-card')).toHaveCount(6); await expect(page.locator('.service-card--featured')).toHaveCount(3); const links = page.locator('.service-card a'); await expect(links).toHaveCount(6); expect(decodeURIComponent(await links.first().getAttribute('href') ?? '')).toContain('Брекеты') })

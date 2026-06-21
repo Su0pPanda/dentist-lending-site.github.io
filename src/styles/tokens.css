@@ -1,0 +1,19 @@
+:root {
+  --ink: #12312d;
+  --muted: #60736f;
+  --brand: #0d786a;
+  --brand-dark: #075d52;
+  --brand-soft: #dff3ee;
+  --mint: #f0faf7;
+  --paper: #fbfdfc;
+  --white: #fff;
+  --line: #dce8e5;
+  --warning: #a85d16;
+  --shadow: 0 20px 60px rgba(17, 70, 62, .09);
+  --shadow-small: 0 8px 30px rgba(17, 70, 62, .08);
+  --radius-sm: 14px;
+  --radius: 24px;
+  --radius-lg: 38px;
+  --container: 1200px;
+  --header: 78px;
+}
