@@ -4,13 +4,11 @@
 
 Проект включает восемь смысловых секций, интерактивный калькулятор стоимости, карточки услуг и врачей, отзывы, результаты лечения и форму записи. Весь контент клиники централизован и подготовлен для быстрой замены.
 
-## 🌐 Живое демо
+<img width="800" height="390" alt="{A7A8C502-2536-48ED-90C3-CCB0108B5B76}" src="https://github.com/user-attachments/assets/6270e928-0cfb-4478-8858-a21c705821de" />
+<img width="800" height="390" alt="image" src="https://github.com/user-attachments/assets/29fe1739-483f-412c-b1fc-f57182eed45c" />
+<img width="800" height="390" alt="image" src="https://github.com/user-attachments/assets/f408c10b-811b-4bbd-ab99-c196b1a5a05f" />
+<img width="800" height="390" alt="image" src="https://github.com/user-attachments/assets/ce2ecbb4-8b5c-40c0-8b47-24d9facad6e5" />
 
-<!-- Замените URL ниже после публикации проекта -->
-
-**Live Demo:** [Открыть сайт](https://su0ppanda.github.io/dentist-lending-site/)
-
-> Ссылка будет обновлена после публикации проекта.
 
 ## ✨ Ключевые возможности
 
